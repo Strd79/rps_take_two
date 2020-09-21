@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors - {{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors!</h1>
+        <nav>
+            <ul>
+                <li><a href="/"><button>Home</button></a></li>
+                <li><a href="/computer"><button>Single Player</button></a></li>
+                <li><a href="/play"><button>Two Players</button></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <p>Rock, Paper, Scissors 2020&copy;</p>
+        <p>Created by David Strain</p>
+    </footer>
+</body>
+</html>
